@@ -104,7 +104,8 @@ Para optimizar el almacenamiento, crearemos una tarea que resuma los datos cada 
      from(bucket: "sensores_raw")
        |> range(start: v.timeRangeStart, stop: v.timeRangeStop)
        |> filter(fn: (r) => r["_measurement"] == "lectura_clima")
-       |> filter(fn: (r) => r["_field"] == "temperatura")
+       |> filter(fn: (r) => r["_field"] == "temperatura" or r["_field"] == "humedad")
+       |> yield(name: "mi_grafica")
      ```
    
    * Crea otro nuevo panel.
