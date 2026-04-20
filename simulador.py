@@ -17,7 +17,7 @@ print("Iniciando envío de datos...")
 try:
     while True:
         for sensor_id in ["sensor_A", "sensor_B"]:
-            # Generamos datos realistas
+            
             temp = random.uniform(20.0, 25.0)
             hum = random.uniform(40.0, 60.0)
             
@@ -30,6 +30,6 @@ try:
             write_api.write(bucket=bucket, org=org, record=point)
             print(f"Enviado: {sensor_id} -> Temp: {temp:.2f}")
         
-        time.sleep(1) # Un dato por segundo
+        time.sleep(1)
 except KeyboardInterrupt:
     print("Simulación detenida.")
