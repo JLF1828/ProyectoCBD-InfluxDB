@@ -53,7 +53,7 @@ Para asegurar que el simulador tenga las librerías necesarias sin afectar a tu 
 2. Sigue el asistente inicial:
    * **Username:** `usuario1` (o el que prefieras).
    * **Organization:** `Universidad de Sevilla`.
-   * **Bucket Inicial:** `sensores_raw`.
+   * **Bucket Inicial:** `sensores_raw`. (luego se puede editar este bucket. Al editarlo, poner en "older than" la cifra que quieres que esten guardados los datos antes de ser borrados. MIN: 1hora)
    * **Se generará acontinuación un token, muy importante copiarlo. Si no se genera, mas adelante se ve como conseguirlo**
 3. **Crear el segundo Bucket:**
    * Ve a **Load Data (en el menú de la izquierda)** > **Buckets**.

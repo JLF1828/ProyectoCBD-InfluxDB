@@ -28,7 +28,7 @@ try:
                 .field("humedad", hum)
             
             write_api.write(bucket=bucket, org=org, record=point)
-            print(f"Enviado: {sensor_id} -> Temp: {temp:.2f}")
+            print(f"Enviado: {sensor_id} -> Temp: {temp:.2f} °C, Hum: {hum:.2f}%")
         
         time.sleep(1)
 except KeyboardInterrupt:
